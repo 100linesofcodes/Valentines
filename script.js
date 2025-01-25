@@ -1,27 +1,24 @@
-// Play sound on hover and click for buttons
 const hoverSound = document.getElementById('hoverSound');
 const clickSound = document.getElementById('clickSound');
 const errorSound = document.getElementById('errorSound');
 
-// Play hover sound on "Yes" button hover
 document.getElementById('yesButton').addEventListener('mouseover', () => {
-    hoverSound.currentTime = 0; // Restart the audio
+    hoverSound.currentTime = 0;
     hoverSound.play();
 });
 
 document.getElementById('noButton').addEventListener('mouseover', () => {
-  hoverSound.currentTime = 0; // Restart the audio
+  hoverSound.currentTime = 0; 
   hoverSound.play();
 });
 
-// Play click sound on "No" button click
 document.getElementById('yesButton').addEventListener('click', () => {
-  clickSound.currentTime = 0; // Restart the audio
+  clickSound.currentTime = 0;
   clickSound.play();
 });
 
 document.getElementById('noButton').addEventListener('click', () => {
-  errorSound.currentTime = 0; // Restart the audio
+  errorSound.currentTime = 0;
     errorSound.play();
 });
 
@@ -36,15 +33,14 @@ document.getElementById('yesButton').addEventListener('click', function () {
       </div>
   `;
 
-  // Add hearts only after the "Yes" button is clicked
-  const numHearts = 100; // Number of hearts to appear
+  const numHearts = 100;
   for (let i = 0; i < numHearts; i++) {
       const heart = document.createElement('img');
-      heart.src = 'heart.png'; // Replace with the path to your heart image
+      heart.src = 'Heart.png';
       heart.classList.add('heart');
-      heart.style.top = `${Math.random() * 100}%`; // Random vertical position
-      heart.style.left = `${Math.random() * 100}%`; // Random horizontal position
-      heart.style.animationDelay = `${Math.random() * 5}s`; // Randomize animation delay
+      heart.style.top = `${Math.random() * 100}%`; 
+      heart.style.left = `${Math.random() * 100}%`;
+      heart.style.animationDelay = `${Math.random() * 5}s`;
       document.body.appendChild(heart);
   }
 
@@ -57,16 +53,13 @@ document.getElementById('yesButton').addEventListener('click', function () {
       if (index < codeText.length) {
           notebookText.textContent += codeText[index];
           index++;
-          setTimeout(typeCode, 20); // Adjust speed here
+          setTimeout(typeCode, 20);
       }
   }
 
   typeCode();
 });
 
-
-
-// Handle "No" button click and cycle through messages
 const noButton = document.getElementById('noButton');
 const noButtonMessages = [
     "Still no, fricking freak",
