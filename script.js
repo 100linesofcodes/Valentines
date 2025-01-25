@@ -36,7 +36,7 @@ document.getElementById('yesButton').addEventListener('click', function () {
   const numHearts = 100;
   for (let i = 0; i < numHearts; i++) {
       const heart = document.createElement('img');
-      heart.src = 'Heart.png';
+      heart.src = 'heart.png';
       heart.classList.add('heart');
       heart.style.top = `${Math.random() * 100}%`; 
       heart.style.left = `${Math.random() * 100}%`;
