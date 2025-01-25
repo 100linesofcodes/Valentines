@@ -1,0 +1,162 @@
+/* General body styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #ffe4e1;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Main container styling */
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styling */
+h1 {
+  color: #ff69b4;
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Button styling */
+button {
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff1493;
+}
+
+/* Emoji styling */
+.emoji {
+  width: 44px;
+  height: 44px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+
+
+#notebook {
+  position: relative;
+  width: 600px; /* Increased width */
+  height: auto;
+  background: linear-gradient(to bottom, #fff 95%, #f2f2f2 95%);
+  background-size: 100% 40px; /* Line spacing */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+#notebook:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  height: 100%;
+  width: 2px;
+  background-color: #ff4d4d; /* Red margin line */
+  z-index: 1;
+}
+
+#notebook p {
+  margin: 0;
+  padding-left: 60px; /* Align with the red margin */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 40px; /* Matches the background line spacing */
+  white-space: pre-wrap;
+  z-index: 2;
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  width: 50px; /* Size of the heart image */
+  height: 50px;
+  animation: float 5s ease-in-out infinite;
+  opacity: 0.8;
+  z-index: -1; /* Ensure hearts are behind everything */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling transition */
+}
+
+.heart:hover {
+  transform: scale(1.5); /* Scale up the heart when hovered */
+}
+
+@keyframes float {
+  0% {
+      transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+      transform: translate(0, -20px) rotate(180deg); /* Smooth upward movement */
+  }
+  100% {
+      transform: translate(0, 0) rotate(360deg); /* Return to original position */
+  }
+}
+
+
+.heart:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  animation-duration: 6s;
+}
+
+.heart:nth-child(2) {
+  top: 20%;
+  left: 80%;
+  animation-duration: 4s;
+}
+
+.heart:nth-child(3) {
+  top: 50%;
+  left: 30%;
+  animation-duration: 5s;
+}
+
+.heart:nth-child(4) {
+  top: 70%;
+  left: 60%;
+  animation-duration: 7s;
+}
+
+.heart:nth-child(5) {
+  top: 30%;
+  left: 40%;
+  animation-duration: 3s;
+}
+
+.heart:nth-child(6) {
+  top: 40%;
+  left: 10%;
+  animation-duration: 5s;
+}
+
+.heart:nth-child(7) {
+  top: 80%;
+  left: 20%;
+  animation-duration: 6s;
+}
