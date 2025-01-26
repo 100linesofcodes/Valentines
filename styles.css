@@ -52,7 +52,8 @@ button:hover {
 
 #notebook {
   position: relative;
-  width: 600px;
+  width: 90%; /* Make the width responsive */
+  max-width: 600px; /* Set a maximum width for larger screens */
   height: auto;
   background: linear-gradient(to bottom, #fff 95%, #f2f2f2 95%);
   background-size: 100% 40px;
@@ -64,23 +65,12 @@ button:hover {
   margin: 20px auto;
 }
 
-#notebook:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50px;
-  height: 100%;
-  width: 2px;
-  background-color: #ff4d4d;
-  z-index: 1;
-}
-
 #notebook p {
   margin: 0;
-  padding-left: 60px;
+  padding-left: 10%; /* Use percentage for padding */
   font-family: 'Courier New', Courier, monospace;
-  font-size: 16px;
-  line-height: 40px;
+  font-size: 4vw; /* Responsive font size */
+  line-height: 5vw; /* Responsive line height */
   white-space: pre-wrap;
   z-index: 2;
   position: relative;
