@@ -52,7 +52,7 @@ button:hover {
 
 #notebook {
   position: relative;
-  width: 90%; /* Make the width responsive */
+  width: 80%; /* Make the width responsive */
   max-width: 600px; /* Set a maximum width for larger screens */
   height: auto;
   background: linear-gradient(to bottom, #fff 95%, #f2f2f2 95%);
@@ -67,7 +67,7 @@ button:hover {
 
 #notebook p {
   margin: 0;
-  padding-left: 10%; /* Use percentage for padding */
+  padding-left: 20%; /* Use percentage for padding */
   font-family: 'Courier New', Courier, monospace;
   font-size: 4vw; /* Responsive font size */
   line-height: 5vw; /* Responsive line height */
