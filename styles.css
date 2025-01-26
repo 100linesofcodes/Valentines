@@ -76,6 +76,13 @@ button:hover {
   position: relative;
 }
 
+@media (min-width: 768px) {
+  #notebook p {
+    font-size: 16px; /* Default font size for larger screens */
+    line-height: 40px; /* Default line height for larger screens */
+  }
+}
+
 .heart {
   position: absolute;
   width: 50px; /* Size of the heart image */
